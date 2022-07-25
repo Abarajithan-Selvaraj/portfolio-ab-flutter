@@ -2,6 +2,8 @@ import 'package:abselva/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../exts/on_hover_btn.dart';
+
 class SocialBar extends StatelessWidget {
   const SocialBar({Key? key}) : super(key: key);
 
@@ -40,18 +42,34 @@ class SocialBar extends StatelessWidget {
   }
 }
 
-class _SocialBarItem extends StatelessWidget {
+class _SocialBarItem extends StatefulWidget {
   final String title;
   final String nameIcon;
   const _SocialBarItem({Key? key, required this.title, required this.nameIcon})
       : super(key: key);
 
   @override
+  State<_SocialBarItem> createState() => _SocialBarItemState();
+}
+
+class _SocialBarItemState extends State<_SocialBarItem> {
+  @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
-      'assets/icons/$nameIcon.svg',
-      height: 24,
-      width: 24,
+    return OnHoverButton(
+      dir: -1,
+      builder: (isHovered) {
+        String iconName = widget.nameIcon;
+        Color clr = isHovered ? eerie : lightGray;
+        return GestureDetector(
+          onTap: () {},
+          child: SvgPicture.asset(
+            'assets/icons/$iconName.svg',
+            height: 24,
+            width: 24,
+            color: clr,
+          ),
+        );
+      },
     );
   }
 }
