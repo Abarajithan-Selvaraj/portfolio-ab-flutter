@@ -55,9 +55,8 @@ class MainContent extends StatelessWidget {
           ),
           const SizedBox(height: 32),
           const Text(
-            "A tech-savvy enhances the Mechanical Engineer's applications to meet industrial needs when it comes to Industry 4.0. With all my 7+ years of Mechanical + Computer experience, I offer solutions to support Manufacturing Industries through CAD Automation (Design Automation), CAE Automation, and software-related solutions. I strongly believe that automating the boring kinds of stuff or daily routines of an engineer makes him/her more creative and productive. He/she brings more values and fun to the organization we belong.",
+            "A tech-savvy puts robot wheels on mechanical softwares by automating them to embrace Industry 4.0. \nWith all my 7+ years of Mechanical + Computer experience, I offer solutions to support manufacturing industries \nthrough CAD customization, automation and development.",
             style: TextStyle(fontSize: 16, color: lightGray),
-            textAlign: TextAlign.justify,
           )
         ],
       ),
