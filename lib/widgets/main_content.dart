@@ -2,6 +2,8 @@ import 'package:abselva/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import 'download_btn.dart';
+
 class MainContent extends StatelessWidget {
   const MainContent({Key? key}) : super(key: key);
 
@@ -57,7 +59,9 @@ class MainContent extends StatelessWidget {
           const Text(
             "A tech-savvy puts robot wheels on mechanical softwares by automating them to embrace Industry 4.0. \nWith all my 7+ years of Mechanical + Computer experience, I offer solutions to support manufacturing industries \nthrough CAD customization, automation and development.",
             style: TextStyle(fontSize: 16, color: lightGray),
-          )
+          ),
+          const SizedBox(height: 32),
+          const DownloadButton(title: 'download resume'),
         ],
       ),
     );

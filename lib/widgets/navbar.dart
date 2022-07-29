@@ -2,7 +2,7 @@ import 'package:abselva/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../exts/on_hover_btn.dart';
+import 'on_hover_btn.dart';
 
 class NavBar extends StatelessWidget {
   const NavBar({Key? key}) : super(key: key);
